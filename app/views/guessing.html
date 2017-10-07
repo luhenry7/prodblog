@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>JS Test</title>
+    <style>
+      #player_title {
+        font-family: 'helvetica neue', helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid rgba(0,0,200,0.6);
+        background: rgba(0,0,200,0.3);
+        color: white;
+        box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+        border-radius: 10px;
+        padding: 3px 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+ </head>
+ <body>
+    <div></div>
+    <br/>
+
+<h1>Go ahead and guess a number between 1 and 10 </h1>
+<input id= "user_guess"/>
+<button id="submit">Guess!</button>
+
+    <script>
+// define a variable that will have to be guessed
+//set up parameters to your guess
+//Ask the player to guess a number
+//log his answer
+//compare the answer and give hints
+
+var submitButtom= document.getElementById('submit')
+ submitButtom.addEventListener("click", checkGuess)
+
+function checkGuess(){
+   
+
+var computerGuess = Math.round(Math.random()*10)
+
+var user_guess = document.getElementById("user_guess").value
+user_guess = parseInt(user_guess)
+if (computerGuess === user_guess) {
+  console.log('yay you won') }
+  else { 
+    console.log("guess again loser", computerGuess)  
+}
+
+    
+}
+
+
+;
+
+    </script>
+ </body>
+</html>

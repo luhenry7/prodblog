@@ -1,0 +1,95 @@
+.alert {
+  color: red;
+  font-style: italic;
+}
+
+h1 {
+    color: blue;
+}
+
+.first_section {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:25vh;
+  background-color: hsla(120, 100%, 25%, 0.3);
+}
+
+.title1, .title2 {
+  margin: 10px;
+  color: green
+  ;
+}
+
+#homebody{
+  display: flex;
+  flex-direction: column;
+}
+
+.title1 {
+  font-size: 50px
+}
+
+.background-image{
+  background-image: url("http://i3.cpcache.com/product/1051628113/sudogetmetheremote_dog_tshirt.jpg?width=750&height=750&Filters=%5B%7B%22name%22%3A%22background%22%2C%22value%22%3A%22F2F2F2%22%2C%22sequence%22%3A2%7D%5D");
+  /*background-image: image_url("http://i3.cpcache.com/product/1051628113/sudogetmetheremote_dog_tshirt.jpg?width=750&height=750&Filters=%5B%7B%22name%22%3A%22background%22%2C%22value%22%3A%22F2F2F2%22%2C%22sequence%22%3A2%7D%5D");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1200px;
+} 
+
+footer{
+  background-color: lightgrey;
+  text-align: center;
+  /*position: absolute;*/
+  margin-top:970px;
+}
+
+.navigation-bar{
+  background-color: rgba(0,0,0, 0.01);
+  position: sticky;
+  top:10px;
+  display:flex;
+  /*justify-content: space-between;*/
+  font-size: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  
+}
+
+.navigation-items {
+  list-style: none;
+  display:flex;
+  /*flex-direction: row;*/
+  /*align-content: space-between;*/
+ 
+}
+
+.list-item {
+  margin:10px;
+  display:flex;
+  /*flex-direction: row;*/
+  align-content: space-between;
+  
+  
+}
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
